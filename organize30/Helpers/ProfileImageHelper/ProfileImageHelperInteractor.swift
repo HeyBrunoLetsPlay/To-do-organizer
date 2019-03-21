@@ -11,6 +11,7 @@ import Foundation
 protocol ProfileImageHelperInteractorInput {
   
   func imagesCount()
+  func imageNameIn(index:Int, complete:(String)->Void)
   
 }
 
@@ -28,14 +29,27 @@ final class ProfileImageHelperInteractor:ProfileImageHelperInteractorInput {
   
   
   init() {
+    
     let imageName = "PhtoCell"
     for i in 0 ... 20 {
+      
       self.images.append("\(imageName)\(i)")
+      
     }
+    
   }
   
   
   func imagesCount() {
+    
     self.output?.number(images: self.images.count)
+    
   }
+  
+  func imageNameIn(index:Int, complete:(String)->Void) {
+    
+    complete(self.images[index])
+    
+  }
+  
 }

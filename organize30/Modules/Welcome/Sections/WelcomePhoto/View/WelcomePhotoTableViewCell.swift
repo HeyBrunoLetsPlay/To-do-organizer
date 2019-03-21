@@ -20,7 +20,8 @@ class WelcomePhotoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier:"s")
+//        self.collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier:"s")
+        collectionView.register(UINib(nibName:"PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:"s")
         self.interactor.output = self
         self.interactor.imagesCount()
         
@@ -46,10 +47,16 @@ extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+      
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"s", for: indexPath) as! PhotoCollectionViewCell
+        
+        self.interactor.imageNameIn(index: indexPath.row) { (name) in
+            cell.setup(fileName: name)
+        }
         
         //  cell.backgroundColor = UIColor.green
         return cell
+        
     }
 }
 
