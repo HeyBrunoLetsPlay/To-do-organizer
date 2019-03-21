@@ -15,5 +15,4 @@ final class WelcomeViewControllerBuilder{
     viewController.sections = [WelcomeHeaderSectionBuilder.make(), WelcomePhotoSectionBuilder.make()]
     return viewController
   }
-  
 }
