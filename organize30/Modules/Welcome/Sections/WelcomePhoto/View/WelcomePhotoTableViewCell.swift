@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol WelcomePhotoTableViewCellOutput {
+    
+    func didSelectAt(index:Int)
+    
+}
+
 class WelcomePhotoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     var numberOfImages:Int = 0
+    var output:WelcomePhotoTableViewCellOutput?
+    
     let interactor:ProfileImageHelperInteractor = ProfileImageHelperInteractor.init()
     
     override func awakeFromNib() {
@@ -41,8 +49,9 @@ extension WelcomePhotoTableViewCell:UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
-    }    
+        self.output?.didSelectAt(index: indexPath.row)
+
+    }
 }
 
 extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
