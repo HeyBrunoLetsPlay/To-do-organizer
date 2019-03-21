@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol SectionOutput:class  {
     func endRefreshing(error: String?)
-    func reloadSection(section: Section, completion: (() -> Void)?)
-    func updateItemsSection(section: Section, completion: (() -> Void)?)
+    func reloadSection(section: Section, animation:UITableView.RowAnimation)
+    func removeItem(from index: Int, in section: Section, animation:UITableView.RowAnimation, completion: (() -> Void)?)
 }

@@ -25,6 +25,8 @@ import UIKit
    
     @objc func cell(for indexPath: IndexPath) -> UITableViewCell.Type
     @objc func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath)
-    @objc optional func rowIsVisible(with indexPath:IndexPath)->Bool
     @objc func didSelectCell(_ cell: UITableViewCell, at indexPath: IndexPath)
+    @objc optional func willDisplayHeaderView(view: UIView)
+    @objc optional func heightForHeaderInSection() -> CGFloat
 }
+

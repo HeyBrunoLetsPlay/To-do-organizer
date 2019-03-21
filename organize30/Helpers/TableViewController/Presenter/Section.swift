@@ -8,7 +8,9 @@
 
 import Foundation
 
-class Section {
+
+class Section:NSObject {
     weak var output: SectionOutput?
     var items: [AnyObject] = []
+
 }
