@@ -20,7 +20,6 @@ class WelcomePhotoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-//        self.collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier:"s")
         collectionView.register(UINib(nibName:"PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:"s")
         self.interactor.output = self
         self.interactor.imagesCount()
@@ -38,7 +37,13 @@ extension WelcomePhotoTableViewCell : ProfileImageHelperInteractorOutput {
     }
 }
 
-extension WelcomePhotoTableViewCell:UICollectionViewDelegate {}
+extension WelcomePhotoTableViewCell:UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+    }    
+}
 
 extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
     
