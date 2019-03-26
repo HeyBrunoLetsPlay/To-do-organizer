@@ -23,7 +23,18 @@ extension WelcomePhotoSection:TableSectionCellInput {
     
     func willDisplayCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
         
+        guard let photoCell = (cell as? WelcomePhotoTableViewCell) else { return }
+        photoCell.set(output: self)
+        
     }
     
     func didSelectCell(_ cell: UITableViewCell, at indexPath: IndexPath) {}
+}
+
+
+extension WelcomePhotoSection : WelcomePhotoTableViewCellOutput {
+    
+    func didSelectimageAt(name: String) {
+        print(name)
+    }
 }

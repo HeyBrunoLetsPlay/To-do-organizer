@@ -10,7 +10,7 @@ import UIKit
 
 protocol WelcomePhotoTableViewCellOutput {
     
-    func didSelectAt(index:Int)
+    func didSelectimageAt(name:String)
     
 }
 
@@ -36,7 +36,9 @@ class WelcomePhotoTableViewCell: UITableViewCell {
     
     
     func set(output:WelcomePhotoTableViewCellOutput) {
+        
         self.output = output
+        
     }
 }
 
@@ -54,8 +56,9 @@ extension WelcomePhotoTableViewCell:UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        self.output?.didSelectAt(index: indexPath.row)
-        
+        self.interactor.imageNameIn(index: indexPath.row) { (name) in
+            self.output?.didSelectimageAt(name: name)
+        }
     }
 }
 
