@@ -19,7 +19,7 @@ class WelcomePhotoTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var numberOfImages:Int = 0
-    var output:WelcomePhotoTableViewCellOutput?
+    private var output:WelcomePhotoTableViewCellOutput?
     
     let interactor:ProfileImageHelperInteractor = ProfileImageHelperInteractor.init()
     
@@ -32,6 +32,11 @@ class WelcomePhotoTableViewCell: UITableViewCell {
         self.interactor.output = self
         self.interactor.imagesCount()
         
+    }
+    
+    
+    func set(output:WelcomePhotoTableViewCellOutput) {
+        self.output = output
     }
 }
 
@@ -50,7 +55,7 @@ extension WelcomePhotoTableViewCell:UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         self.output?.didSelectAt(index: indexPath.row)
-
+        
     }
 }
 
@@ -61,7 +66,7 @@ extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"s", for: indexPath) as! PhotoCollectionViewCell
         
         self.interactor.imageNameIn(index: indexPath.row) { (name) in
