@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol WelcomePhotoTableViewCellOutput {
+    
+    func didSelectimageAt(name:String)
+    
+}
+
 class WelcomePhotoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     var numberOfImages:Int = 0
+    private var output:WelcomePhotoTableViewCellOutput?
+    
     let interactor:ProfileImageHelperInteractor = ProfileImageHelperInteractor.init()
     
     override func awakeFromNib() {
@@ -20,9 +28,16 @@ class WelcomePhotoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier:"s")
+        collectionView.register(UINib(nibName:"PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier:"s")
         self.interactor.output = self
         self.interactor.imagesCount()
+        
+    }
+    
+    
+    func set(output:WelcomePhotoTableViewCellOutput) {
+        
+        self.output = output
         
     }
 }
@@ -37,7 +52,15 @@ extension WelcomePhotoTableViewCell : ProfileImageHelperInteractorOutput {
     }
 }
 
-extension WelcomePhotoTableViewCell:UICollectionViewDelegate {}
+extension WelcomePhotoTableViewCell:UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.interactor.imageNameIn(index: indexPath.row) { (name) in
+            self.output?.didSelectimageAt(name: name)
+        }
+    }
+}
 
 extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
     
@@ -46,10 +69,16 @@ extension WelcomePhotoTableViewCell:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:"s", for: indexPath) as! PhotoCollectionViewCell
+        
+        self.interactor.imageNameIn(index: indexPath.row) { (name) in
+            cell.setup(fileName: name)
+        }
         
         //  cell.backgroundColor = UIColor.green
         return cell
+        
     }
 }
 
