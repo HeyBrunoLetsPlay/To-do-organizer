@@ -39,6 +39,8 @@
 		15B6D6E02219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6D6DF2219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift */; };
 		15B6D6E22219E33600C7BE28 /* WelcomeHeaderDisplayItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6D6E12219E33600C7BE28 /* WelcomeHeaderDisplayItemBuilder.swift */; };
 		15B6D6E4221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6D6E3221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift */; };
+		15D657B52249EB3500885EBB /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D657B42249EB3500885EBB /* RealmManager.swift */; };
+		15D657BA2249EBDE00885EBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D657B92249EBDE00885EBB /* User.swift */; };
 		15E25162222E1303005DCFB7 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E25160222E1303005DCFB7 /* PhotoCollectionViewCell.swift */; };
 		15E25163222E1303005DCFB7 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E25161222E1303005DCFB7 /* PhotoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 		15B6D6DF2219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderDisplayItem.swift; sourceTree = "<group>"; };
 		15B6D6E12219E33600C7BE28 /* WelcomeHeaderDisplayItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderDisplayItemBuilder.swift; sourceTree = "<group>"; };
 		15B6D6E3221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeaderSectionBuilder.swift; sourceTree = "<group>"; };
+		15D657B42249EB3500885EBB /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		15D657B92249EBDE00885EBB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		15E25160222E1303005DCFB7 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		15E25161222E1303005DCFB7 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +194,7 @@
 		1547B94C221797FF00D0D560 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				15D657B22249EB1100885EBB /* Realm */,
 				15B2312022434DE900042E75 /* ProfileImageHelper */,
 				15B2311E22434A9B00042E75 /* Thread.swift */,
 				1547B9412217969A00D0D560 /* TableViewController */,
@@ -289,6 +294,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		15D657B22249EB1100885EBB /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				15D657B62249EB4800885EBB /* Entitys */,
+				15D657B32249EB1C00885EBB /* Core */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		15D657B32249EB1C00885EBB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				15D657B42249EB3500885EBB /* RealmManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		15D657B62249EB4800885EBB /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				15D657B72249EB8500885EBB /* User */,
+			);
+			path = Entitys;
+			sourceTree = "<group>";
+		};
+		15D657B72249EB8500885EBB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				15D657B82249EB8C00885EBB /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		15D657B82249EB8C00885EBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15D657B92249EBDE00885EBB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,8 +415,10 @@
 				1547B9542217987900D0D560 /* WelcomeViewController.swift in Sources */,
 				15851C452224E325009C7203 /* WelcomePhotoSectionBuilder.swift in Sources */,
 				15B2312222434E5C00042E75 /* ProfileImageHelperInteractor.swift in Sources */,
+				15D657B52249EB3500885EBB /* RealmManager.swift in Sources */,
 				1547B95D22179EC000D0D560 /* WelcomeViewControllerBuilder.swift in Sources */,
 				15B6D6E02219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift in Sources */,
+				15D657BA2249EBDE00885EBB /* User.swift in Sources */,
 				1547B9572217999800D0D560 /* Utilities.swift in Sources */,
 				1547B946221796B200D0D560 /* SectionOutput.swift in Sources */,
 				15B6D6D72219B8E000C7BE28 /* WelcomeHeaderSection.swift in Sources */,
