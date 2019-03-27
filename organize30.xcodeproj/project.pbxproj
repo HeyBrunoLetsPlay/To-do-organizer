@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150E286E224AF8E500B50226 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E286C224AF8E500B50226 /* RealmManager.swift */; };
+		150E286F224AF8E500B50226 /* Results+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E286D224AF8E500B50226 /* Results+Helper.swift */; };
+		150E2871224AF8F100B50226 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2870224AF8F100B50226 /* User.swift */; };
+		150E2873224AF8FB00B50226 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2872224AF8FB00B50226 /* UserManager.swift */; };
 		15157A40221FA02C004D5737 /* WelcomePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15157A3E221FA02C004D5737 /* WelcomePhotoTableViewCell.swift */; };
 		15157A41221FA02C004D5737 /* WelcomePhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15157A3F221FA02C004D5737 /* WelcomePhotoTableViewCell.xib */; };
 		15157A45221FA447004D5737 /* WelcomePhotoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15157A44221FA447004D5737 /* WelcomePhotoSection.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150E286C224AF8E500B50226 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		150E286D224AF8E500B50226 /* Results+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+Helper.swift"; sourceTree = "<group>"; };
+		150E2870224AF8F100B50226 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		150E2872224AF8FB00B50226 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		15157A3E221FA02C004D5737 /* WelcomePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePhotoTableViewCell.swift; sourceTree = "<group>"; };
 		15157A3F221FA02C004D5737 /* WelcomePhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomePhotoTableViewCell.xib; sourceTree = "<group>"; };
 		15157A44221FA447004D5737 /* WelcomePhotoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePhotoSection.swift; sourceTree = "<group>"; };
@@ -93,6 +101,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150E2866224AF64700B50226 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				150E2868224AF7E400B50226 /* Modules */,
+				150E2867224AF75200B50226 /* Core */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		150E2867224AF75200B50226 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				150E286C224AF8E500B50226 /* RealmManager.swift */,
+				150E286D224AF8E500B50226 /* Results+Helper.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		150E2868224AF7E400B50226 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				150E2869224AF8B000B50226 /* User */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		150E2869224AF8B000B50226 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				150E286A224AF8B000B50226 /* Model */,
+				150E286B224AF8B000B50226 /* Interactor */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		150E286A224AF8B000B50226 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				150E2870224AF8F100B50226 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		150E286B224AF8B000B50226 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				150E2872224AF8FB00B50226 /* UserManager.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		15157A3D221F9F72004D5737 /* WelcomePhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +249,7 @@
 		1547B94C221797FF00D0D560 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				150E2866224AF64700B50226 /* Realm */,
 				15B2312022434DE900042E75 /* ProfileImageHelper */,
 				15B2311E22434A9B00042E75 /* Thread.swift */,
 				1547B9412217969A00D0D560 /* TableViewController */,
@@ -366,10 +426,13 @@
 			files = (
 				1547B9512217982500D0D560 /* Array.swift in Sources */,
 				15E25162222E1303005DCFB7 /* PhotoCollectionViewCell.swift in Sources */,
+				150E286F224AF8E500B50226 /* Results+Helper.swift in Sources */,
 				1547B9542217987900D0D560 /* WelcomeViewController.swift in Sources */,
 				15851C452224E325009C7203 /* WelcomePhotoSectionBuilder.swift in Sources */,
 				15B2312222434E5C00042E75 /* ProfileImageHelperInteractor.swift in Sources */,
+				150E286E224AF8E500B50226 /* RealmManager.swift in Sources */,
 				1547B95D22179EC000D0D560 /* WelcomeViewControllerBuilder.swift in Sources */,
+				150E2871224AF8F100B50226 /* User.swift in Sources */,
 				15B6D6E02219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift in Sources */,
 				1547B9572217999800D0D560 /* Utilities.swift in Sources */,
 				1547B946221796B200D0D560 /* SectionOutput.swift in Sources */,
@@ -384,6 +447,7 @@
 				15B2311F22434A9B00042E75 /* Thread.swift in Sources */,
 				15B6D6DD2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.swift in Sources */,
 				1547B948221796B200D0D560 /* Section.swift in Sources */,
+				150E2873224AF8FB00B50226 /* UserManager.swift in Sources */,
 				15157A4A221FA83A004D5737 /* WelcomeHeaderInteractor.swift in Sources */,
 				155235A0221790AD007A728F /* ViewController.swift in Sources */,
 				1552359E221790AD007A728F /* AppDelegate.swift in Sources */,
