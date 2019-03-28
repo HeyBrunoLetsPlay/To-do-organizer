@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		150E286E224AF8E500B50226 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E286C224AF8E500B50226 /* RealmManager.swift */; };
 		150E286F224AF8E500B50226 /* Results+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E286D224AF8E500B50226 /* Results+Helper.swift */; };
-		150E2871224AF8F100B50226 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2870224AF8F100B50226 /* User.swift */; };
+		150E2871224AF8F100B50226 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2870224AF8F100B50226 /* UserEntity.swift */; };
 		150E2873224AF8FB00B50226 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E2872224AF8FB00B50226 /* UserManager.swift */; };
 		15157A40221FA02C004D5737 /* WelcomePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15157A3E221FA02C004D5737 /* WelcomePhotoTableViewCell.swift */; };
 		15157A41221FA02C004D5737 /* WelcomePhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15157A3F221FA02C004D5737 /* WelcomePhotoTableViewCell.xib */; };
@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		150E286C224AF8E500B50226 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		150E286D224AF8E500B50226 /* Results+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+Helper.swift"; sourceTree = "<group>"; };
-		150E2870224AF8F100B50226 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		150E2870224AF8F100B50226 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		150E2872224AF8FB00B50226 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		15157A3E221FA02C004D5737 /* WelcomePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePhotoTableViewCell.swift; sourceTree = "<group>"; };
 		15157A3F221FA02C004D5737 /* WelcomePhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomePhotoTableViewCell.xib; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		150E286A224AF8B000B50226 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				150E2870224AF8F100B50226 /* User.swift */,
+				150E2870224AF8F100B50226 /* UserEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,7 +507,7 @@
 				15B2312222434E5C00042E75 /* ProfileImageHelperInteractor.swift in Sources */,
 				150E286E224AF8E500B50226 /* RealmManager.swift in Sources */,
 				1547B95D22179EC000D0D560 /* WelcomeViewControllerBuilder.swift in Sources */,
-				150E2871224AF8F100B50226 /* User.swift in Sources */,
+				150E2871224AF8F100B50226 /* UserEntity.swift in Sources */,
 				15B6D6E02219E14900C7BE28 /* WelcomeHeaderDisplayItem.swift in Sources */,
 				1547B9572217999800D0D560 /* Utilities.swift in Sources */,
 				1547B946221796B200D0D560 /* SectionOutput.swift in Sources */,
