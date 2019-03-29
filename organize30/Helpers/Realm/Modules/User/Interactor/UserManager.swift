@@ -24,11 +24,28 @@ import RealmSwift
 
 
 
+protocol UserInteractorInput {
+  
+}
 
+protocol UserInteractorOutput:class {
+  
+}
 
 final class UserInteractor {
   
   struct UserItem {
+    let id:Int = 0
+    let image:String = ""
+    let name:String = ""
+    let genre:String = "Indefinido"
+  }
+  
+  var item:UserItem?
+  weak var output:UserInteractorOutput?
+  
+  
+  static func mapper(entity:UserEntity) {
     
   }
   
