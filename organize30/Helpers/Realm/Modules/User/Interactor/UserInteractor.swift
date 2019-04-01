@@ -31,7 +31,7 @@ struct UserItem {
 }
 
 protocol UserInteractorInput {
-  
+  func fetchUser()
 }
 
 protocol UserInteractorOutput:class {
@@ -39,6 +39,11 @@ protocol UserInteractorOutput:class {
 }
 
 final class UserInteractor:UserInteractorInput {
+  
+  func fetchUser() {
+    
+  }
+  
   
   
   var item:UserItem?
@@ -50,5 +55,5 @@ final class UserInteractor:UserInteractorInput {
   }
   
   init() {}
-
+  
 }
