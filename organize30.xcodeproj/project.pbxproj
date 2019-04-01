@@ -18,6 +18,7 @@
 		15157A4A221FA83A004D5737 /* WelcomeHeaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15157A49221FA83A004D5737 /* WelcomeHeaderInteractor.swift */; };
 		153B6EE6224DB39B00EA5488 /* organize30Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B6EE5224DB39B00EA5488 /* organize30Tests.swift */; };
 		153B6EEF224DC4B900EA5488 /* UserInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B6EEE224DC4B900EA5488 /* UserInteractorTests.swift */; };
+		153B6EF12251B01E00EA5488 /* UserInteractorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B6EF02251B01E00EA5488 /* UserInteractorBuilder.swift */; };
 		1547B9392217938E00D0D560 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1547B9382217938E00D0D560 /* Dispatch.swift */; };
 		1547B946221796B200D0D560 /* SectionOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1547B943221796B200D0D560 /* SectionOutput.swift */; };
 		1547B947221796B200D0D560 /* SectionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1547B944221796B200D0D560 /* SectionInput.swift */; };
@@ -74,6 +75,7 @@
 		153B6EE5224DB39B00EA5488 /* organize30Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = organize30Tests.swift; sourceTree = "<group>"; };
 		153B6EE7224DB39B00EA5488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		153B6EEE224DC4B900EA5488 /* UserInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorTests.swift; sourceTree = "<group>"; };
+		153B6EF02251B01E00EA5488 /* UserInteractorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorBuilder.swift; sourceTree = "<group>"; };
 		1547B9382217938E00D0D560 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		1547B943221796B200D0D560 /* SectionOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionOutput.swift; sourceTree = "<group>"; };
 		1547B944221796B200D0D560 /* SectionInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionInput.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				150E2872224AF8FB00B50226 /* UserInteractor.swift */,
+				153B6EF02251B01E00EA5488 /* UserInteractorBuilder.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				15B2311F22434A9B00042E75 /* Thread.swift in Sources */,
 				15B6D6DD2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.swift in Sources */,
 				1547B948221796B200D0D560 /* Section.swift in Sources */,
+				153B6EF12251B01E00EA5488 /* UserInteractorBuilder.swift in Sources */,
 				150E2873224AF8FB00B50226 /* UserInteractor.swift in Sources */,
 				15157A4A221FA83A004D5737 /* WelcomeHeaderInteractor.swift in Sources */,
 				155235A0221790AD007A728F /* ViewController.swift in Sources */,
