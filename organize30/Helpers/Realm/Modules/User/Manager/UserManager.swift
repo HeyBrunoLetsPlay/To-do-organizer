@@ -7,12 +7,28 @@
 //
 
 import Foundation
+import RealmSwift
+
 
 protocol UserManagerInput {
-  func fetchUser(complete:(UserEntity)->Void)
+  func fetchUser(complete:(UserEntity?)->Void)
 }
 
 
-class UserManager {
+class UserManager:UserManagerInput {
   
+  func fetchUser(complete: (UserEntity?) -> Void) {
+    
+    let realmManager:RealmManager = RealmManager()
+    
+    if let objUser = realmManager.getObjects(type:UserEntity.self)?.first as? UserEntity {
+      
+      complete(objUser)
+      
+    }else {
+      
+      complete(nil)
+      
+    }
+  }
 }
