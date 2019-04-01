@@ -13,6 +13,7 @@ class UserInteractorTests: XCTestCase {
   
   var requestExpectation:XCTestExpectation!
   var item:UserItem?
+  var isError:Bool = false
   
   override func setUp() {
     super.setUp()
@@ -25,17 +26,23 @@ class UserInteractorTests: XCTestCase {
     self.item = nil
   }
   
-  func testFetchUser() {
+  func testErrorFetchUser() {
     
     //1. GIVEN
     let interactor = UserInteractorBuilder.make()
-    
+    interactor.output = self
     //2. WHEN
     
     
     //3. THEN
     
+  }
+}
+
+
+extension UserInteractorTests : UserInteractorOutput {
+  
+  func failedFetchUser() {
     
   }
-  
 }

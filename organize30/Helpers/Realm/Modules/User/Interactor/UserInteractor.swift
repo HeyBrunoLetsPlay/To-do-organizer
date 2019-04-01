@@ -35,25 +35,34 @@ protocol UserInteractorInput {
 }
 
 protocol UserInteractorOutput:class {
-  
+  func failedFetchUser()
 }
 
-final class UserInteractor:UserInteractorInput {
+final class UserInteractor {
   
-  func fetchUser() {
-    
-  }
-  
-  
-  
-  var item:UserItem?
+  private var manager:UserManagerInput
   weak var output:UserInteractorOutput?
   
+  init(manager:UserManagerInput) {
+    self.manager = manager
+  }
   
   static func mapper(entity:UserEntity) {
     
   }
+}
+
+extension UserInteractor:UserInteractorInput {
   
-  init() {}
-  
+  func fetchUser() {
+    
+    self.manager.fetchUser { (arg) in
+      
+      if arg == nil {
+        
+        self.output?.failedFetchUser()
+        
+      }
+    }
+  }
 }
