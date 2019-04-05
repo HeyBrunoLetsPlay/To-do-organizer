@@ -10,7 +10,8 @@ import Foundation
 
 final class UserInteractorBuilder {
   
-  static func make() -> UserInteractor {
+  static func make(output:UserInteractorOutput) -> UserInteractor {
+    
     return UserInteractor.init(manager: UserManager())
   }
   

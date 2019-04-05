@@ -28,6 +28,10 @@ struct UserItem {
   let image:String = ""
   let name:String = ""
   let genre:String = "Indefinido"
+  
+  init(user:UserEntity) {
+    
+  }
 }
 
 protocol UserInteractorInput {
@@ -36,6 +40,7 @@ protocol UserInteractorInput {
 
 protocol UserInteractorOutput:class {
   func failedFetchUser()
+  func fetched(user:UserItem)
 }
 
 final class UserInteractor {
@@ -47,8 +52,9 @@ final class UserInteractor {
     self.manager = manager
   }
   
-  static func mapper(entity:UserEntity) {
+  private func mapper(entity:UserEntity)-> UserItem {
     
+    return UserItem.init(user: entity)
   }
 }
 
@@ -61,6 +67,10 @@ extension UserInteractor:UserInteractorInput {
       if arg == nil {
         
         self.output?.failedFetchUser()
+        
+      } else {
+        
+        self.output?.fetched(user:self.mapper(entity:arg!))
         
       }
     }
