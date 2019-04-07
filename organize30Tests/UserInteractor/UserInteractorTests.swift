@@ -45,7 +45,7 @@ class UserInteractorTests: XCTestCase {
 extension UserInteractorTests : UserInteractorOutput {
   
   func fetched(user: UserItem) {
-    self.item = User
+    self.item = user
   }
   
   
