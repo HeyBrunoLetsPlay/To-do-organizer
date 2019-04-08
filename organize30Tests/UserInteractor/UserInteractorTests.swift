@@ -33,6 +33,7 @@ class UserInteractorTests: XCTestCase {
     
     //2. WHEN
     let interactor = UserInteractorBuilder.make(output: self)
+    interactor.saveUserWith(image: "", name: "", genre: "")
     interactor.fetchUser()
     
     //3. THEN

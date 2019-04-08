@@ -12,7 +12,11 @@ final class UserInteractorBuilder {
   
   static func make(output:UserInteractorOutput) -> UserInteractor {
     
-    return UserInteractor.init(manager: UserManager())
+    let interactor = UserInteractor.init(manager: UserManager())
+    
+    interactor.output = output
+    
+    return interactor
   }
   
 }

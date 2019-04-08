@@ -36,7 +36,7 @@ struct UserItem {
 
 protocol UserInteractorInput {
   func fetchUser()
-  func saveUserWith(id:Int, image:Int, name:String, genre:String)
+  func saveUserWith(image:String?, name:String?, genre:String?)
 }
 
 protocol UserInteractorOutput:class {
@@ -61,9 +61,9 @@ final class UserInteractor {
 
 extension UserInteractor:UserInteractorInput {
   
-  func saveUserWith(id: Int, image: Int, name: String, genre: String) {
+  func saveUserWith(image:String?, name:String?, genre:String?) {
     
-    
+    self.manager.saveUserWith(image: image ?? "", name: name ?? "", genre: genre ?? "")
     
   }
   
