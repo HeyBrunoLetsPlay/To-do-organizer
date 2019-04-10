@@ -26,7 +26,35 @@ class UserInteractorTests: XCTestCase {
     self.item = nil
   }
   
+  
   func testFetchUser() {
+    
+    // 1. GIVEN
+    XCTAssertNil(self.item, "Está nulo antes de iniciar")
+    
+    // 2. WHEN
+    let interactor = UserInteractorMockBuilder.make(self, false)
+    interactor.fetchUser()
+    
+    // 3. THEN
+    XCTAssertNotNil(self.item, "Item foi capturado com sucesso")
+  }
+  
+  func testFailedFetchUser() {
+    
+    // 1. GIVEN
+    XCTAssertFalse(self.isError, "Está nulo antes de iniciar")
+    
+    // 2. WHEN
+    let interactor = UserInteractorMockBuilder.make(self, true)
+    interactor.fetchUser()
+    
+    // 3. THEN
+    XCTAssertTrue(self.isError, "Erro chamado")
+    
+  }
+  
+  func testSaveAndFetchUser() {
     
     //1. GIVEN
     XCTAssertNil(self.item, "Está nulo antes de iniciar")
@@ -49,8 +77,7 @@ extension UserInteractorTests : UserInteractorOutput {
     self.item = user
   }
   
-  
   func failedFetchUser() {
-    
+    self.isError = true
   }
 }
