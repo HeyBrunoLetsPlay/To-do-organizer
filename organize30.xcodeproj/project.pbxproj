@@ -51,6 +51,11 @@
 		15B6D6E4221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6D6E3221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift */; };
 		15E25162222E1303005DCFB7 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E25160222E1303005DCFB7 /* PhotoCollectionViewCell.swift */; };
 		15E25163222E1303005DCFB7 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E25161222E1303005DCFB7 /* PhotoCollectionViewCell.xib */; };
+		15F221DD226AA2EF008E97BE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221DB226AA2EF008E97BE /* SplashViewController.swift */; };
+		15F221DE226AA2EF008E97BE /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F221DC226AA2EF008E97BE /* SplashViewController.xib */; };
+		15F221E5226AC61E008E97BE /* SplashViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */; };
+		15F221E8226BA746008E97BE /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E7226BA746008E97BE /* SplashWireframe.swift */; };
+		15F221EA226BAE32008E97BE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E9226BAE32008E97BE /* UIImageView.swift */; };
 		596EC893E9DD95624093AF18 /* Pods_organize30.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76ADBE0D55DD818A7A45891B /* Pods_organize30.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +119,11 @@
 		15D657B92249EBDE00885EBB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		15E25160222E1303005DCFB7 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		15E25161222E1303005DCFB7 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		15F221DB226AA2EF008E97BE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		15F221DC226AA2EF008E97BE /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerBuilder.swift; sourceTree = "<group>"; };
+		15F221E7226BA746008E97BE /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
+		15F221E9226BAE32008E97BE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		6C9A15012255AAA2E9598A70 /* Pods-organize30.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-organize30.debug.xcconfig"; path = "Pods/Target Support Files/Pods-organize30/Pods-organize30.debug.xcconfig"; sourceTree = "<group>"; };
 		76ADBE0D55DD818A7A45891B /* Pods_organize30.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_organize30.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91B9CC20E6C7BF1F3C5367F /* Pods-organize30.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-organize30.release.xcconfig"; path = "Pods/Target Support Files/Pods-organize30/Pods-organize30.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +271,7 @@
 		1547B93A221794B200D0D560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				15F221D92266CDAB008E97BE /* Splash */,
 				1547B93B221794C700D0D560 /* Welcome */,
 			);
 			path = Modules;
@@ -316,6 +327,7 @@
 		1547B94C221797FF00D0D560 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				15F221E1226AB134008E97BE /* Extension */,
 				150E2866224AF64700B50226 /* Realm */,
 				15B2312022434DE900042E75 /* ProfileImageHelper */,
 				15B2311E22434A9B00042E75 /* Thread.swift */,
@@ -429,6 +441,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		15F221D92266CDAB008E97BE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				15F221E6226BA5FC008E97BE /* Wireframe */,
+				15F221DA226AA2CA008E97BE /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		15F221DA226AA2CA008E97BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15F221DB226AA2EF008E97BE /* SplashViewController.swift */,
+				15F221DC226AA2EF008E97BE /* SplashViewController.xib */,
+				15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15F221E1226AB134008E97BE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15F221E9226BAE32008E97BE /* UIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		15F221E6226BA5FC008E97BE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				15F221E7226BA746008E97BE /* SplashWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		C54653F3D4C939C992FF9F45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,6 +586,7 @@
 				155235A8221790EB007A728F /* LaunchScreen.storyboard in Resources */,
 				15157A41221FA02C004D5737 /* WelcomePhotoTableViewCell.xib in Resources */,
 				1547B9552217987900D0D560 /* WelcomeViewController.xib in Resources */,
+				15F221DE226AA2EF008E97BE /* SplashViewController.xib in Resources */,
 				155235A5221790EB007A728F /* Assets.xcassets in Resources */,
 				15E25163222E1303005DCFB7 /* PhotoCollectionViewCell.xib in Resources */,
 				15B6D6DE2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.xib in Resources */,
@@ -580,6 +628,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-organize30/Pods-organize30-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -587,6 +636,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -616,6 +666,8 @@
 				1547B9512217982500D0D560 /* Array.swift in Sources */,
 				15E25162222E1303005DCFB7 /* PhotoCollectionViewCell.swift in Sources */,
 				150E286F224AF8E500B50226 /* Results+Helper.swift in Sources */,
+				15F221DD226AA2EF008E97BE /* SplashViewController.swift in Sources */,
+				15F221E8226BA746008E97BE /* SplashWireframe.swift in Sources */,
 				1547B9542217987900D0D560 /* WelcomeViewController.swift in Sources */,
 				15851C452224E325009C7203 /* WelcomePhotoSectionBuilder.swift in Sources */,
 				15B2312222434E5C00042E75 /* ProfileImageHelperInteractor.swift in Sources */,
@@ -637,11 +689,13 @@
 				15B2311F22434A9B00042E75 /* Thread.swift in Sources */,
 				15B6D6DD2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.swift in Sources */,
 				1547B948221796B200D0D560 /* Section.swift in Sources */,
+				15F221EA226BAE32008E97BE /* UIImageView.swift in Sources */,
 				153B6EF12251B01E00EA5488 /* UserInteractorBuilder.swift in Sources */,
 				150E2873224AF8FB00B50226 /* UserInteractor.swift in Sources */,
 				15157A4A221FA83A004D5737 /* WelcomeHeaderInteractor.swift in Sources */,
 				155235A0221790AD007A728F /* ViewController.swift in Sources */,
 				1552359E221790AD007A728F /* AppDelegate.swift in Sources */,
+				15F221E5226AC61E008E97BE /* SplashViewControllerBuilder.swift in Sources */,
 				15B6D6E4221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift in Sources */,
 				15851C432224E1F3009C7203 /* WelcomePhotoDisplayItemBuilder.swift in Sources */,
 				15B6D6E22219E33600C7BE28 /* WelcomeHeaderDisplayItemBuilder.swift in Sources */,
