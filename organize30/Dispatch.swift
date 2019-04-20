@@ -12,6 +12,7 @@ class Dispatch {
   
   static func startAppIn(_ window:UIWindow){
     // .. Lógica de apresentação
-    WelcomeWireframe().present(in:window)
+//    WelcomeWireframe().present(in:window)
+      SplashWireframe().present(in: window)
   }
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="organize30" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="seo-Tk-foa" id="ymk-p1-Slj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floresta" translatesAutoresizingMaskIntoConstraints="NO" id="seo-Tk-foa">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsZ-NL-qer">
+                    <rect key="frame" x="167" y="408" width="80" height="80"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MnE-2s-Iwz">
+                            <rect key="frame" x="21.5" y="21.5" width="37" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="52m-vf-4Xy"/>
+                        <constraint firstItem="MnE-2s-Iwz" firstAttribute="centerY" secondItem="OsZ-NL-qer" secondAttribute="centerY" id="PgE-cb-NTK"/>
+                        <constraint firstItem="MnE-2s-Iwz" firstAttribute="centerX" secondItem="OsZ-NL-qer" secondAttribute="centerX" id="YDX-yi-nFd"/>
+                        <constraint firstAttribute="height" constant="80" id="zs2-zy-ooO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OsZ-NL-qer" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9jE-OB-icL"/>
+                <constraint firstItem="seo-Tk-foa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-44" id="HL3-bY-c1W"/>
+                <constraint firstItem="OsZ-NL-qer" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QIC-ly-zlw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="seo-Tk-foa" secondAttribute="bottom" constant="-34" id="kD6-Bx-Ona"/>
+                <constraint firstItem="seo-Tk-foa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xoh-4J-TXt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="seo-Tk-foa" secondAttribute="trailing" id="xy6-Ka-nnq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139.13043478260872" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="floresta" width="1250" height="833"/>
+    </resources>
+</document>
