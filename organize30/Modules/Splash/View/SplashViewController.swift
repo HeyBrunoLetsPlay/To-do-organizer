@@ -12,8 +12,12 @@ class SplashViewController: UIViewController {
   
   @IBOutlet weak var backgroundImageView: UIImageView!
   
+  var presenter:SplashPresenterInput?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "Organize 30"
+    self.backgroundImageView.addBlur()
+    self.presenter?.viewDidLoad()
   }
 }

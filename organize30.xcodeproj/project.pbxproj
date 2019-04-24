@@ -56,6 +56,7 @@
 		15F221E5226AC61E008E97BE /* SplashViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */; };
 		15F221E8226BA746008E97BE /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E7226BA746008E97BE /* SplashWireframe.swift */; };
 		15F221EA226BAE32008E97BE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E9226BAE32008E97BE /* UIImageView.swift */; };
+		15F221ED226D49CC008E97BE /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221EC226D49CC008E97BE /* SplashPresenter.swift */; };
 		596EC893E9DD95624093AF18 /* Pods_organize30.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76ADBE0D55DD818A7A45891B /* Pods_organize30.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerBuilder.swift; sourceTree = "<group>"; };
 		15F221E7226BA746008E97BE /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
 		15F221E9226BAE32008E97BE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		15F221EC226D49CC008E97BE /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		6C9A15012255AAA2E9598A70 /* Pods-organize30.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-organize30.debug.xcconfig"; path = "Pods/Target Support Files/Pods-organize30/Pods-organize30.debug.xcconfig"; sourceTree = "<group>"; };
 		76ADBE0D55DD818A7A45891B /* Pods_organize30.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_organize30.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91B9CC20E6C7BF1F3C5367F /* Pods-organize30.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-organize30.release.xcconfig"; path = "Pods/Target Support Files/Pods-organize30/Pods-organize30.release.xcconfig"; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 		15F221D92266CDAB008E97BE /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				15F221EB226D49AD008E97BE /* Presenter */,
 				15F221E6226BA5FC008E97BE /* Wireframe */,
 				15F221DA226AA2CA008E97BE /* View */,
 			);
@@ -474,6 +477,14 @@
 				15F221E7226BA746008E97BE /* SplashWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		15F221EB226D49AD008E97BE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				15F221EC226D49CC008E97BE /* SplashPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C54653F3D4C939C992FF9F45 /* Pods */ = {
@@ -684,6 +695,7 @@
 				1547B9392217938E00D0D560 /* Dispatch.swift in Sources */,
 				1547B947221796B200D0D560 /* SectionInput.swift in Sources */,
 				15157A47221FA566004D5737 /* WelcomePhotoDisplayItem.swift in Sources */,
+				15F221ED226D49CC008E97BE /* SplashPresenter.swift in Sources */,
 				15157A45221FA447004D5737 /* WelcomePhotoSection.swift in Sources */,
 				15157A40221FA02C004D5737 /* WelcomePhotoTableViewCell.swift in Sources */,
 				15B2311F22434A9B00042E75 /* Thread.swift in Sources */,
