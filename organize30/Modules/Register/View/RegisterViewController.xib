@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="organize30" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="O2t-tU-sD9" id="a7N-7H-uus"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-tU-sD9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmg-kz-9do">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O2t-tU-sD9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6t1-ht-9WS"/>
+                <constraint firstItem="O2t-tU-sD9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7n9-OD-qZr"/>
+                <constraint firstAttribute="bottom" secondItem="pmg-kz-9do" secondAttribute="bottom" id="V0p-JV-iQO"/>
+                <constraint firstItem="pmg-kz-9do" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VmZ-U8-dOa"/>
+                <constraint firstAttribute="bottom" secondItem="O2t-tU-sD9" secondAttribute="bottom" id="XAJ-vD-j5r"/>
+                <constraint firstItem="pmg-kz-9do" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="elP-rR-tGq"/>
+                <constraint firstItem="O2t-tU-sD9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gf8-Id-EWw"/>
+                <constraint firstItem="pmg-kz-9do" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j1p-vy-XPH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </view>
+    </objects>
+</document>
