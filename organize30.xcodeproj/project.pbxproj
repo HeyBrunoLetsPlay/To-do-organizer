@@ -37,6 +37,10 @@
 		155235A3221790AD007A728F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155235A1221790AD007A728F /* Main.storyboard */; };
 		155235A5221790EB007A728F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155235A4221790EB007A728F /* Assets.xcassets */; };
 		155235A8221790EB007A728F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155235A6221790EB007A728F /* LaunchScreen.storyboard */; };
+		1557052C226FFA8D003C8940 /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15570527226FFA8D003C8940 /* RegisterWireframe.swift */; };
+		1557052D226FFA8D003C8940 /* RegisterViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15570529226FFA8D003C8940 /* RegisterViewControllerBuilder.swift */; };
+		1557052E226FFA8D003C8940 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1557052A226FFA8D003C8940 /* RegisterViewController.xib */; };
+		1557052F226FFA8D003C8940 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1557052B226FFA8D003C8940 /* RegisterViewController.swift */; };
 		158058FA225D3BE400299F7D /* UserInteractorMockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158058F9225D3BE400299F7D /* UserInteractorMockBuilder.swift */; };
 		158058FE225D589100299F7D /* UserManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158058FC225D589100299F7D /* UserManagerMock.swift */; };
 		15851C432224E1F3009C7203 /* WelcomePhotoDisplayItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15851C422224E1F3009C7203 /* WelcomePhotoDisplayItemBuilder.swift */; };
@@ -56,10 +60,7 @@
 		15F221E5226AC61E008E97BE /* SplashViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */; };
 		15F221E8226BA746008E97BE /* SplashWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E7226BA746008E97BE /* SplashWireframe.swift */; };
 		15F221EA226BAE32008E97BE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221E9226BAE32008E97BE /* UIImageView.swift */; };
-		15F221F2226FEC48008E97BE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221F0226FEC48008E97BE /* RegisterViewController.swift */; };
-		15F221F3226FEC48008E97BE /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F221F1226FEC48008E97BE /* RegisterViewController.xib */; };
-		15F221F6226FF1A3008E97BE /* RegisterViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221F5226FF1A3008E97BE /* RegisterViewControllerBuilder.swift */; };
-		15F221F8226FF378008E97BE /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221F7226FF378008E97BE /* RegisterWireframe.swift */; };
+		15F221ED226D49CC008E97BE /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F221EC226D49CC008E97BE /* SplashPresenter.swift */; };
 		596EC893E9DD95624093AF18 /* Pods_organize30.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76ADBE0D55DD818A7A45891B /* Pods_organize30.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,10 @@
 		155235A4221790EB007A728F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155235A7221790EB007A728F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155235A9221790EB007A728F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15570527226FFA8D003C8940 /* RegisterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
+		15570529226FFA8D003C8940 /* RegisterViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerBuilder.swift; sourceTree = "<group>"; };
+		1557052A226FFA8D003C8940 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		1557052B226FFA8D003C8940 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		158058F9225D3BE400299F7D /* UserInteractorMockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorMockBuilder.swift; sourceTree = "<group>"; };
 		158058FC225D589100299F7D /* UserManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerMock.swift; sourceTree = "<group>"; };
 		15851C422224E1F3009C7203 /* WelcomePhotoDisplayItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePhotoDisplayItemBuilder.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		15F221E4226AC61E008E97BE /* SplashViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerBuilder.swift; sourceTree = "<group>"; };
 		15F221E7226BA746008E97BE /* SplashWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireframe.swift; sourceTree = "<group>"; };
 		15F221E9226BAE32008E97BE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		15F221EC226D49CC008E97BE /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		15F221F0226FEC48008E97BE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		15F221F1226FEC48008E97BE /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		15F221F5226FF1A3008E97BE /* RegisterViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerBuilder.swift; sourceTree = "<group>"; };
@@ -278,7 +284,7 @@
 		1547B93A221794B200D0D560 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				15F221EE226FEBC1008E97BE /* Register */,
+				15570525226FFA8D003C8940 /* Register */,
 				15F221D92266CDAB008E97BE /* Splash */,
 				1547B93B221794C700D0D560 /* Welcome */,
 			);
@@ -374,6 +380,7 @@
 				1552359B221790AC007A728F /* Products */,
 				C54653F3D4C939C992FF9F45 /* Pods */,
 				C7044D6766038D91CA7C4C50 /* Frameworks */,
+				15570524226FFA78003C8940 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,6 +407,44 @@
 				1547B9382217938E00D0D560 /* Dispatch.swift */,
 			);
 			path = organize30;
+			sourceTree = "<group>";
+		};
+		15570524226FFA78003C8940 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				15F221F5226FF1A3008E97BE /* RegisterViewControllerBuilder.swift */,
+				15F221F0226FEC48008E97BE /* RegisterViewController.swift */,
+				15F221F7226FF378008E97BE /* RegisterWireframe.swift */,
+				15F221F1226FEC48008E97BE /* RegisterViewController.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		15570525226FFA8D003C8940 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				15570526226FFA8D003C8940 /* Wireframe */,
+				15570528226FFA8D003C8940 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		15570526226FFA8D003C8940 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				15570527226FFA8D003C8940 /* RegisterWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		15570528226FFA8D003C8940 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15570529226FFA8D003C8940 /* RegisterViewControllerBuilder.swift */,
+				1557052A226FFA8D003C8940 /* RegisterViewController.xib */,
+				1557052B226FFA8D003C8940 /* RegisterViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		15B2312022434DE900042E75 /* ProfileImageHelper */ = {
@@ -443,6 +488,7 @@
 		15F221D92266CDAB008E97BE /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				15F221EB226D49AD008E97BE /* Presenter */,
 				15F221E6226BA5FC008E97BE /* Wireframe */,
 				15F221DA226AA2CA008E97BE /* View */,
 			);
@@ -475,31 +521,12 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
-		15F221EE226FEBC1008E97BE /* Register */ = {
+		15F221EB226D49AD008E97BE /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				15F221F4226FF175008E97BE /* Wireframe */,
-				15F221EF226FEBF8008E97BE /* View */,
+				15F221EC226D49CC008E97BE /* SplashPresenter.swift */,
 			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		15F221EF226FEBF8008E97BE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				15F221F0226FEC48008E97BE /* RegisterViewController.swift */,
-				15F221F1226FEC48008E97BE /* RegisterViewController.xib */,
-				15F221F5226FF1A3008E97BE /* RegisterViewControllerBuilder.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		15F221F4226FF175008E97BE /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				15F221F7226FF378008E97BE /* RegisterWireframe.swift */,
-			);
-			path = Wireframe;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C54653F3D4C939C992FF9F45 /* Pods */ = {
@@ -610,11 +637,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				155235A8221790EB007A728F /* LaunchScreen.storyboard in Resources */,
+				1557052E226FFA8D003C8940 /* RegisterViewController.xib in Resources */,
 				15157A41221FA02C004D5737 /* WelcomePhotoTableViewCell.xib in Resources */,
 				1547B9552217987900D0D560 /* WelcomeViewController.xib in Resources */,
 				15F221DE226AA2EF008E97BE /* SplashViewController.xib in Resources */,
 				155235A5221790EB007A728F /* Assets.xcassets in Resources */,
-				15F221F3226FEC48008E97BE /* RegisterViewController.xib in Resources */,
 				15E25163222E1303005DCFB7 /* PhotoCollectionViewCell.xib in Resources */,
 				15B6D6DE2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.xib in Resources */,
 				155235A3221790AD007A728F /* Main.storyboard in Resources */,
@@ -696,6 +723,7 @@
 				15F221DD226AA2EF008E97BE /* SplashViewController.swift in Sources */,
 				15F221E8226BA746008E97BE /* SplashWireframe.swift in Sources */,
 				1547B9542217987900D0D560 /* WelcomeViewController.swift in Sources */,
+				1557052D226FFA8D003C8940 /* RegisterViewControllerBuilder.swift in Sources */,
 				15851C452224E325009C7203 /* WelcomePhotoSectionBuilder.swift in Sources */,
 				15B2312222434E5C00042E75 /* ProfileImageHelperInteractor.swift in Sources */,
 				150E286E224AF8E500B50226 /* RealmManager.swift in Sources */,
@@ -709,12 +737,13 @@
 				1547B9502217982500D0D560 /* ReusableIdentifier.swift in Sources */,
 				1547B94B2217976B00D0D560 /* TableViewController.swift in Sources */,
 				1547B9392217938E00D0D560 /* Dispatch.swift in Sources */,
+				1557052C226FFA8D003C8940 /* RegisterWireframe.swift in Sources */,
 				1547B947221796B200D0D560 /* SectionInput.swift in Sources */,
 				15157A47221FA566004D5737 /* WelcomePhotoDisplayItem.swift in Sources */,
+				1557052F226FFA8D003C8940 /* RegisterViewController.swift in Sources */,
+				15F221ED226D49CC008E97BE /* SplashPresenter.swift in Sources */,
 				15157A45221FA447004D5737 /* WelcomePhotoSection.swift in Sources */,
-				15F221F6226FF1A3008E97BE /* RegisterViewControllerBuilder.swift in Sources */,
 				15157A40221FA02C004D5737 /* WelcomePhotoTableViewCell.swift in Sources */,
-				15F221F2226FEC48008E97BE /* RegisterViewController.swift in Sources */,
 				15B2311F22434A9B00042E75 /* Thread.swift in Sources */,
 				15B6D6DD2219BC3500C7BE28 /* WelcomeHeaderTableViewCell.swift in Sources */,
 				1547B948221796B200D0D560 /* Section.swift in Sources */,
@@ -723,7 +752,6 @@
 				150E2873224AF8FB00B50226 /* UserInteractor.swift in Sources */,
 				15157A4A221FA83A004D5737 /* WelcomeHeaderInteractor.swift in Sources */,
 				155235A0221790AD007A728F /* ViewController.swift in Sources */,
-				15F221F8226FF378008E97BE /* RegisterWireframe.swift in Sources */,
 				1552359E221790AD007A728F /* AppDelegate.swift in Sources */,
 				15F221E5226AC61E008E97BE /* SplashViewControllerBuilder.swift in Sources */,
 				15B6D6E4221A353C00C7BE28 /* WelcomeHeaderSectionBuilder.swift in Sources */,

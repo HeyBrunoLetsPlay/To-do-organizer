@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-tU-sD9">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floresta" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-tU-sD9">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmg-kz-9do">
@@ -44,4 +44,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </view>
     </objects>
+    <resources>
+        <image name="floresta" width="1250" height="833"/>
+    </resources>
 </document>

@@ -15,7 +15,7 @@ final class SplashWireframe {
   
   func present(in window:UIWindow) {
     
-    self.viewController = SplashViewControllerBuilder.make()
+    self.viewController = SplashViewControllerBuilder.make(self)
     
     guard let controller = self.viewController else {
       return
@@ -27,6 +27,9 @@ final class SplashWireframe {
     }
     
     window.rootViewController = navigation
-    
+  }
+  
+  func dispatch() {
+    Dispatch.run(self.navigationController!)
   }
 }

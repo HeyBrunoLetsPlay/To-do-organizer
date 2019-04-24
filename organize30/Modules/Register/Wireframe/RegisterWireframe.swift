@@ -10,8 +10,12 @@ import UIKit
 
 final class RegisterWireframe {
   
-  func pushWith(navigation:UINavigationController) {
+  func presentWith(navigation:UINavigationController) {
     let viewController =  RegisterViewControllerBuilder.make()
-    navigation.pushViewController(viewController, animated: true)
+    
+    executeOnMainQueue {
+      navigation.present(viewController, animated: true)
+    }
+    
   }
 }

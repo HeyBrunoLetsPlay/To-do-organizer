@@ -15,6 +15,6 @@ class Dispatch {
   }
   
   static func run(_ navigation:UINavigationController) {
-    RegisterWireframe().pushWith(navigation: navigation)
+    RegisterWireframe().presentWith(navigation: navigation)
   }
 }
